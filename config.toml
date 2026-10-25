@@ -1,0 +1,24 @@
+# All relative paths are resolved from this file's directory.
+# Copy to config.local.toml for private credentials; select it with --config.
+api_key = ""
+base_url = "https://api.deepseek.com"
+model = "deepseek-flash"
+
+db_path = "data/agent.sqlite3"
+# read_docs can read UTF-8 files within this workspace.
+workspace_root = "."
+
+max_decisions = 8
+context_tokens = 16384
+reply_tokens = 1024
+tool_result_tokens = 2048
+compression_ratio = 0.70
+recent_interactions = 6
+tool_timeout = 5.0
+search_delay = 0.25
+poll_interval = 0.02
+model_timeout = 60.0
+
+# Optional bearer-token-to-user mapping. Empty uses trusted local X-User-ID.
+[api_tokens]
+# "your-private-token" = "alice"
